@@ -2,12 +2,12 @@ import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative bg-cover bg-center py-20 md:py-32" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600609293139-cd78a7de6d68?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')" }}>
+    <section id="home" className="relative bg-cover bg-center py-20 md:py-32" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1551410224-699683e15636?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')" }}>
       <div className="absolute inset-0 bg-black opacity-40"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-2xl mx-auto text-center text-white">
           <span className="text-secondary font-montserrat uppercase tracking-wider font-bold">Honest & Reliable</span>
-          <h1 className="text-4xl sm:text-5xl font-montserrat font-bold mt-2 leading-tight">Simple, Honest Landscaping</h1>
+          <h1 className="text-4xl sm:text-5xl font-montserrat font-bold mt-2 leading-tight">San Diego's Finest Landscaping</h1>
           <p className="mt-4 text-lg sm:text-xl opacity-90">Martin Gardening provides straightforward landscaping services at fair prices in Rancho Bernardo and Poway, California.</p>
           <div className="mt-8 flex flex-wrap gap-4 justify-center">
             <a href="#testimonials">
