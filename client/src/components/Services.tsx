@@ -1,12 +1,14 @@
 import gardenCareImage from '@/assets/garden-care.png';
 import plantingMulchingImage from '@/assets/planting-mulching.png';
+import pruningTrimmingImage from '@/assets/pruning-trimming.png';
+import lawnMaintenanceImage from '@/assets/lawn-maintenance.png';
 
 const services = [
   {
     title: "Lawn Maintenance",
     description: "Simple, reliable lawn care with no hidden fees. We mow, edge, and clean up, leaving your yard looking its best.",
     icon: "fas fa-cut",
-    image: "https://images.unsplash.com/photo-1520302630591-fd1c66edc19d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" // Luxury lawn in Southern California
+    image: lawnMaintenanceImage // Custom lawn maintenance image
   },
   {
     title: "Garden Care",
@@ -24,7 +26,7 @@ const services = [
     title: "Pruning & Trimming",
     description: "Careful trimming of trees and shrubs when they need it, not on an arbitrary schedule designed to bill you more.",
     icon: "fas fa-tree",
-    image: "https://images.unsplash.com/photo-1584479898061-15742e14f50d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" // Well-maintained shrubs in luxury yard
+    image: pruningTrimmingImage // Custom pruning and trimming image from Rancho Bernardo
   }
 ];
 
