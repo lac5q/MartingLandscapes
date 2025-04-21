@@ -1,4 +1,5 @@
 import gardenCareImage from '@/assets/garden-care.png';
+import plantingMulchingImage from '@/assets/planting-mulching.png';
 
 const services = [
   {
@@ -17,7 +18,7 @@ const services = [
     title: "Planting & Mulching",
     description: "We'll recommend plants that thrive in our climate and won't try to sell you varieties that need constant replacing.",
     icon: "fas fa-leaf",
-    image: "https://images.unsplash.com/photo-1579522655346-2a410905cb65?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" // Luxury planters in Southern California
+    image: plantingMulchingImage // Custom planting and mulching image
   },
   {
     title: "Pruning & Trimming",
