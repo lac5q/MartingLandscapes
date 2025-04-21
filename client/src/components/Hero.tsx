@@ -1,8 +1,9 @@
 import { Button } from '@/components/ui/button';
+import luxuryLandscapeImage from '@/assets/luxury-landscape.png';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative bg-cover bg-center py-20 md:py-32" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1551410224-699683e15636?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')" }}>
+    <section id="home" className="relative bg-cover bg-center py-20 md:py-32" style={{ backgroundImage: `url(${luxuryLandscapeImage})` }}>
       <div className="absolute inset-0 bg-black opacity-40"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-2xl mx-auto text-center text-white">
