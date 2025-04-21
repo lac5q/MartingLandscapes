@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative bg-cover bg-center py-20 md:py-32" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1558904541-efa843a96f01?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')" }}>
+    <section id="home" className="relative bg-cover bg-center py-20 md:py-32" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600609293139-cd78a7de6d68?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')" }}>
       <div className="absolute inset-0 bg-black opacity-40"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-2xl mx-auto text-center text-white">

@@ -2,22 +2,26 @@ const services = [
   {
     title: "Lawn Maintenance",
     description: "Simple, reliable lawn care with no hidden fees. We mow, edge, and clean up, leaving your yard looking its best.",
-    icon: "fas fa-cut"
+    icon: "fas fa-cut",
+    image: "https://images.unsplash.com/photo-1520302630591-fd1c66edc19d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" // Luxury lawn in Southern California
   },
   {
     title: "Garden Care",
     description: "Honest garden maintenance that focuses on what your plants actually need, not unnecessary services.",
-    icon: "fas fa-seedling"
+    icon: "fas fa-seedling",
+    image: "https://images.unsplash.com/photo-1622130574457-a20ea5666c15?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" // Luxury garden in Rancho Bernardo style
   },
   {
     title: "Planting & Mulching",
     description: "We'll recommend plants that thrive in our climate and won't try to sell you varieties that need constant replacing.",
-    icon: "fas fa-leaf"
+    icon: "fas fa-leaf",
+    image: "https://images.unsplash.com/photo-1579522655346-2a410905cb65?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" // Luxury planters in Southern California
   },
   {
     title: "Pruning & Trimming",
     description: "Careful trimming of trees and shrubs when they need it, not on an arbitrary schedule designed to bill you more.",
-    icon: "fas fa-tree"
+    icon: "fas fa-tree",
+    image: "https://images.unsplash.com/photo-1584479898061-15742e14f50d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" // Well-maintained shrubs in luxury yard
   }
 ];
 
@@ -37,15 +41,25 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="bg-gray-50 rounded-lg p-8 flex items-start"
+              className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg"
             >
-              <div className="mr-6 pt-1">
-                <div className="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center text-primary text-2xl">
-                  <i className={service.icon}></i>
+              <div className="relative h-48">
+                <img 
+                  src={service.image} 
+                  alt={service.title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                <div className="absolute bottom-0 left-0 p-4">
+                  <div className="flex items-center">
+                    <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white mr-3">
+                      <i className={service.icon}></i>
+                    </div>
+                    <h3 className="text-xl font-montserrat font-semibold text-white">{service.title}</h3>
+                  </div>
                 </div>
               </div>
-              <div>
-                <h3 className="text-xl font-montserrat font-semibold mb-3">{service.title}</h3>
+              <div className="p-6">
                 <p className="text-gray-600">{service.description}</p>
               </div>
             </div>
@@ -53,11 +67,27 @@ const Services = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <div className="inline-block bg-light rounded-lg p-6 max-w-3xl mx-auto">
+          <div className="inline-block bg-light rounded-lg p-6 max-w-3xl mx-auto shadow-md">
             <h3 className="text-xl font-montserrat font-semibold mb-4">Our Honest Pricing Promise</h3>
             <p className="text-gray-600">
               We believe in complete transparency. You'll always know exactly what you're paying for, and we'll never add surprise charges or upsell you on services you don't need. We provide free, detailed estimates before any work begins.
             </p>
+            <div className="mt-4 pt-4 border-t border-gray-200">
+              <div className="flex justify-center space-x-6">
+                <div className="text-center">
+                  <div className="text-primary font-bold text-xl">100%</div>
+                  <div className="text-sm text-gray-500">Satisfaction Guarantee</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-primary font-bold text-xl">15+</div>
+                  <div className="text-sm text-gray-500">Years Experience</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-primary font-bold text-xl">500+</div>
+                  <div className="text-sm text-gray-500">Happy Customers</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

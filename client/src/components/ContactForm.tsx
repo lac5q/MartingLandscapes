@@ -9,6 +9,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import ServiceMap from './ServiceMap';
 
 // Form validation schema
 const formSchema = z.object({
@@ -215,12 +216,12 @@ const ContactForm = () => {
                   </div>
                 </div>
               </div>
-              
-              <div className="mt-8 text-center">
-                <p className="font-medium">Serving Rancho Bernardo, Poway and surrounding areas</p>
-              </div>
             </div>
           </div>
+        </div>
+        
+        <div className="mt-12 max-w-5xl mx-auto">
+          <ServiceMap />
         </div>
         
         <div className="mt-8 text-center text-gray-600">
