@@ -1,3 +1,5 @@
+import gardenCareImage from '@/assets/garden-care.png';
+
 const services = [
   {
     title: "Lawn Maintenance",
@@ -9,7 +11,7 @@ const services = [
     title: "Garden Care",
     description: "Honest garden maintenance that focuses on what your plants actually need, not unnecessary services.",
     icon: "fas fa-seedling",
-    image: "https://images.unsplash.com/photo-1622130574457-a20ea5666c15?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" // Luxury garden in Rancho Bernardo style
+    image: gardenCareImage // Custom rose garden image
   },
   {
     title: "Planting & Mulching",
