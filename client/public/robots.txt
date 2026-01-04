@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://martingardening.com/sitemap.xml
